@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400;
+    background: #191919;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+    background: #fff;
+}
+
+.header_content {
+    margin: 0 auto;
+    padding: 0 94px 0 94px;
+}
+
+.header_top {
+    position: relative;
+    top: 10px;
+}
+.header_top h1 {
+    float: left;
+}
+.header_content p {
+    padding: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.icons {
+    list-style: none;
+    float: right;
+}
+
+.icons li {
+    display: inline-block;
+}
+
+.icons img {
+    width: 64px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
+}
+
+.projects {
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    width: 32%;
+    background: #2F2F31;
+    border: 5px solid #2F2F31;
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 0 1% 25px 0;
+    position: relative;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.28);
+}
+
+@media (max-width: 830px) {
+    .project-box {
+        width: 49%;
+        margin-right: 3px !important;   
+        }
+}
+
+@media (max-width: 550px) {
+    .project-box {
+        width: 100%;
+        margin-right: 0 !important;
+        }
+}
+
+.img-wrapper {
+    overflow: hidden;
+    height: 200px;
+    background: #fff;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.project-actions {
+    width: 101%;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+}
+
+.project-actions a {
+    display: inline-block;
+    width: 25%;
+    text-decoration: none;
+    margin: 0 20px 0;
+    font-size: 20px;    
+    color: #fff;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -o-transition: 200ms;
+    -ms-transition: 200ms;
+    transition: 200ms;
+}
+
+.project-actions a:hover {
+    width: 30%;
+    background: #fff;
+    color: #2F2F31;
+    margin: 0 11px 0;
+    box-shadow: 0px 0px 3px rgba(255,255,255,1);
+}
+
+.project-name {
+    position: relative;
+    font-size: 0.85em;
+    white-space: nowrap;
+    padding: 12px 15px 20px;
+}
+.btn-group {
+    background: #2F2F31;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0px 0px 3px rgba(255,255,255,1);
+    margin-bottom: 10px;
+    
+
+}
+.btn-group button {
+    flex: 1; 
+    padding: 10px 20px;
+    font-family: inherit;
+    background-color: whitesmoke;
+    background: #2F2F31;
+    color: #fff;
+    border: none;
+    transition: 200ms;
+    outline: none;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.btn-group button:hover {
+    flex: 1;
+    font-weight: 400;
+    background: #fff;
+    color: #2F2F31;
+    box-shadow: 0px 0px 3px rgba(255,255,255,1);
+    
+}
+
