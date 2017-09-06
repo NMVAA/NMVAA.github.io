@@ -15,8 +15,5 @@ function openTab(evt, tabId) {
     document.getElementById(tabId).style.display = "block";
     evt.currentTarget.className += " tablinksActive";
     evt.currentTarget.firstElementChild.className += " circleActive";
-    console.log(evt.currentTarget.firstElementChild);
-
 }
 document.getElementById("default").click();
-
