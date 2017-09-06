@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 function openTab(evt, tabId) {
     var tabcontent, tablinks, circle;
     tabcontent = document.getElementsByClassName("tabcontent");
