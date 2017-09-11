@@ -1,0 +1,31 @@
+<div class="conteiner">
+  <h2 (click)="toggle()">{{selectedTask.name}}</h2>
+  <label *ngIf="show">
+      <input [(ngModel)]="selectedTask.name" placeholder="name">
+      <button (click)="save()">Save</button>
+      </label>
+  <div class="status">
+    <span>Status: </span>{{selectedTask.obj_status ? selectedTask.obj_status : "No status"}}
+  </div>
+  <div>
+    <span>Priority: </span> {{selectedTask.is_high_priority ? "High" : "Not high"}}
+  </div>
+  <div>
+    <span>Task type: </span> {{selectedTask.task_type ? selectedTask.task_type : "Not set"}}
+  </div>
+  <div>
+    <span>Physical progress: </span> {{selectedTask.physical_progress ? selectedTask.physical_progress + "%" : "Not started"}}
+  </div>
+  <div>
+    <span>Creation date: </span> {{selectedTask.creation_date | date:'dd/MM/yyyy'}}
+  </div>
+  <div>
+    <span>Start date: </span> {{selectedTask.start_date | date:'dd/MM/yyyy'}}
+  </div>
+  <div>
+    <span>Tags: </span> {{selectedTask.tags ? selectedTask.tags : "No tags"}}
+  </div>
+  <p><span>Description: </span>{{selectedTask.description ? selectedTask.description : "No description"}}</p>
+  <button (click)="goBack()">Back</button>
+</div>
+

@@ -1,0 +1,22 @@
+<table>
+  <tr>
+    <th>Task Name</th>
+    <th>Tags</th>
+    <th>Actual effort</th>
+    <th>Estimated effort </th>
+    <th>Due date</th>
+  </tr>
+  <tr *ngFor="let task of tasks" id="{{task.id}}">
+    <td [class.highPriority]="task.is_high_priority" (click)="onSelect(task)">{{task.name}}</td>
+    <td>
+      <div class="task-tags">
+        <span *ngFor="let tag of task.tags">
+          <span class="singleTag">{{tag}}</span>
+        </span>
+      </div>
+    </td>
+    <td class="actual_effort">{{task.actual_effort ? task.actual_effort + " hours" : "Not started"}} </td>
+    <td class="estimated_effort">{{task.estimated_effort ? task.estimated_effort + " hours" : "Not set" }} </td>
+    <td>{{task.due_date | date:'dd/MM/yyyy'}}</td>
+  </tr>
+</table>

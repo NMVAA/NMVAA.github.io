@@ -1,0 +1,32 @@
+div:nth-child(even) {
+  background-color: #dddddd;
+}
+
+h2 {
+  text-align: center;
+}
+
+input {
+  display: inline-block
+}
+
+div {
+  padding: 8px;
+  font-family: arial, sans-serif;
+  text-align: right;
+}
+
+.conteiner {
+  position: relative;
+  width: 45%;
+  margin: 0 auto;
+}
+
+span {
+  position: absolute;
+  left: 20px;
+}
+
+.status {
+  text-transform: capitalize;
+}
