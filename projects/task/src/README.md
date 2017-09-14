@@ -1,8 +1,4 @@
-# Task
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
-Тестовое задание для AngularJS-разработчика
-
+# ТЗ
 Реализуйте single-page application, состоящее из двух экранов-страниц.
 
 На индексной странице расположите таблицу со списком задач. Cписок получите из файла tasks.json.
@@ -17,6 +13,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 при клике на название задачи оно должно редактироваться (inlineeditor) и после сохранения задача должна отправляться на сервер. Сервера нет, поэтому можно просто сделать PUT-запрос на любой адрес.
 
 Должны быть использованы сервисы Angular, такие как $http/$resource, $route, promises, контроллеры, директивы.
+
+## Task
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
+Тестовое задание для AngularJS-разработчика
 
 ## Development server
 
