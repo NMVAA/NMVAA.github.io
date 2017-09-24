@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.maincontainer {
+    position: relative;
+    overflow: hidden;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 970px;
+    height: 250px;
+    border: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    width: 190px;
+    height: 45px;
+    margin: 25px 0 0 30px;
+}
+
+.logo .logoSumsung {
+    margin-bottom: -10px;
+    margin-left: 4px;
+    width: 35%;
+}
+
+#info {
+    position: absolute;
+    bottom: 20px;
+    font-size: 24px;
+    width: 225px;
+    font-weight: 300;
+}
+
+#phone {
+    position: absolute;
+    top: 15px;
+    left: 280px;
+    width: 514px;
+    height: 221px;
+    background: url(images/images/phone/phone_sprite.png) 0 0;
+    animation: start 2s linear;
+}
+
+#internalsframe {
+    position: absolute;
+    top: 137px;
+    left: 79px;
+    width: 55px;
+    height: 45px;
+    background: url(images/images/internals_frame.png) 600px 98px;
+    visibility: hidden;
+}
+
+#phone iframe {
+    position: absolute;
+    top: 10px;
+    left: 77px;
+    visibility: visible;
+}
+
+.border {
+    position: absolute;
+    top: 1px;
+    left: -12;
+    width: 970px;
+    height: 250px;
+    background: url(images/images/970x250_highlights.png);
+    z-index: 1;
+    visibility: visible;
+    animation: startborder 2s linear;
+}
+
+#flash {
+    position: absolute;
+    top: -75px;
+    left: -45px;
+    background: url(images/images/flash.png) 0 0;
+    width: 299px;
+    height: 299px;
+    visibility: hidden;
+}
+
+#slidecontainer {
+    position: absolute;
+    top: 100px;
+    left: -88px;
+    animation: startslider 2s linear;
+}
+
+.slideInfo {
+    position: absolute;
+    width: 100px;
+    top: -70px;
+    left: 920px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.slider {
+    z-index: 2;
+    position: absolute;
+    top: 25px;
+    left: 787px;
+    -webkit-appearance: none;
+    width: 200px;
+    height: 1px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    transform: rotate(-90deg);
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    cursor: move;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.raindrop {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+}
+
+#raindropcontainer {
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.closebutton {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 10;
+}
+
+.closebutton img {
+    width: 15px;
+    height: 15px;
+}
+
+.closebutton span {
+    position: absolute;
+    top: 0px;
+    left: -45px;
+    font-size: 10px;
+    text-decoration-line: underline;
+}
+
+a:link {
+    color: black;
+}
+
+.button {
+    transform: scale(0.8);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.run-animation {
+    animation: flash 200ms linear;
+}
+
+@keyframes rain1 {
+    0% {
+        opacity: 0;
+        transform: scale(2.3);
+        visibility: visible;
+    }
+    25% {
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        transform: translateY(70px) scale(0.1);
+    }
+}
+
+@keyframes rain2 {
+    0% {
+        opacity: 0;
+        transform: scale(10);
+        visibility: visible;
+    }
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: translateY(100px) scale(0.1);
+    }
+}
+
+@keyframes flash {
+    0% {
+        visibility: visible;
+        transform: scale(0.1);
+    }
+    100% {
+        transform: scale(4);
+        visibility: hidden;
+    }
+}
+
+@keyframes start {
+    0% {
+        transform: translateY(300px)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes startslider {
+    0% {
+        transform: translateY(400px)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes startborder {
+    0% {
+        transform: translateY(300px)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
