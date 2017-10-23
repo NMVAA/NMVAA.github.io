@@ -1,0 +1,138 @@
+ /* reviews */
+
+ .reviews {
+   display: block;
+   position: absolute;
+   top: 310px;
+   max-width: 490px;
+   padding: 0 20px 0 20px;
+   width: 100%;
+ }
+
+ .last-reviews {
+   font-size: 16px;
+   font-weight: bold;
+ }
+
+ .all-reviews {
+   font-size: 14px;
+ }
+
+ .icons {
+   font-size: 12px;
+   float: right;
+ }
+
+ .value img {
+   position: relative;
+   top: 3px;
+ }
+
+ .num-reviews img {
+   position: relative;
+   top: 4px;
+ }
+
+ .value,
+ .num-reviews {
+   display: inline-block;
+ }
+
+ .client-comment {
+   width: 100%;
+   margin-top: 15px;
+ }
+
+ .client-name {
+   font-size: 14px;
+   font-weight: bold;
+ }
+
+ .comment-date {
+   margin-left: 10px;
+   font-size: 11px;
+   color: #888;
+ }
+
+ .client-message {
+   width: 100%;
+   background: #f2fbff;
+   padding: 20px;
+   border: 1px solid #cfcfcf;
+   margin-top: 10px;
+   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+   white-space: pre-line;
+ }
+
+ .client-message::before {
+   content: '';
+   display: block;
+   margin-top: -26px;
+   margin-bottom: 10px;
+   width: 10px;
+   height: 10px;
+   background: #f2fbff;
+   transform: rotate(45deg);
+   border: 1px solid #cfcfcf;
+   border-bottom: none;
+   border-right: none;
+ }
+
+ .add-comment-container {
+   max-width: 490;
+   background: #f2f2f2;
+   margin: 20px -20px 0px -20px;
+   padding-bottom: 10px;
+ }
+
+ p {
+   word-break: break-word;
+ }
+
+ .add-comment textarea {
+   position: relative;
+   top: 30px;
+   left: 20px;
+   right: 20px;
+   max-width: 450px;
+   height: 65px;
+   width: 100%;
+   border-radius: 5px;
+ }
+
+ .add-comment button {
+   display: block;
+   margin: 60px auto;
+   max-width: 280px;
+   height: 45px;
+   width: 100%;
+   background: #fdd639;
+   border: none;
+   border-radius: 30px;
+   font-size: 16px;
+   font-weight: bold;
+ }
+
+ @media (max-width: 490px) {
+   .card-img,
+   .card-name,
+   .card-job-title,
+   .card-message-box,
+   .card-stats,
+   .reviews,
+   .add-comment button,
+   .add-comment textarea,
+   .add-comment-container {
+     position: static;
+     display: block;
+     width: 100%;
+     margin: 10px auto;
+     text-align: center;
+   }
+   .card-stats {
+     margin-top: 20px;
+   }
+   .add-comment textarea {
+     text-align: left;
+   }
+ }  

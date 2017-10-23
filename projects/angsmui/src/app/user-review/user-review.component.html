@@ -1,0 +1,27 @@
+<!-- reviews -->
+<div class="reviews">
+  <div class="reviews-bar clearfix">
+    <span class="last-reviews">Последние отзывы</span>
+    <a href="" class="all-reviews">Все отзывы                
+            </a>
+    <div class="icons">
+      <div class="value">
+        <img src="../assets/img/icon1.png" alt=""> <span>131</span>
+      </div>
+      <div class="num-reviews">
+        <img src="../assets/img/icon2.png" alt="">
+        <span>14</span>
+      </div>
+    </div>
+  </div>
+  <div class="client-comment" *ngFor="let comment of comments">
+    <span class="client-name">{{comment.name ? comment.name : "Anonymous"}}</span><span class="comment-date">{{comment.date | date:'dd MMMM y' }}</span>
+    <p class="client-message">{{comment.text}}</p>
+  </div>
+  <div class="add-comment-container">
+    <form action="" class="add-comment" (submit)="addComment($event, textInput)">
+      <textarea (keydown)="keyDown($event, textInput)" type="form" #textInput></textarea>
+      <button type="submit">Написать консультанту</button>
+    </form>
+  </div>
+</div>
