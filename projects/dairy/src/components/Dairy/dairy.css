@@ -24,6 +24,7 @@ input[type=text]:focus {
     background: #27ccc0;
     color: white;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .item {
@@ -32,6 +33,7 @@ input[type=text]:focus {
     margin: 10px auto;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(100, 100, 100, 0.25);
+    cursor: pointer;
 }
 
 .itemName {
@@ -52,6 +54,7 @@ input[type=text]:focus {
 
 .delete {
     width: 100px;
+    cursor: pointer;
     text-align: center;
     float: right;
     padding: 10px 0px 10px 0px;

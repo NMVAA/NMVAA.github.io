@@ -7,11 +7,16 @@ const Dairy = (props) => {
             <div  className="delete clearfix" data-tag={index} onClick={props.deleteItem}>Delete</div>
         </div>
     })
+    const submitHandler = (e) => {
+        if(e.keyCode === 13){
+        e.preventDefault();
+        }
+    }
     return (
         <div className="Dairy">
             <h1>Items</h1>
             <form action="">
-                <input placeholder="Type name here..." type="text" />
+                <input placeholder="Type name here..." type="text" onKeyDown={submitHandler} />
                 <div className="addNew clearfix" onClick={props.addNewItem}>Add new</div>
             </form>
             {items}
