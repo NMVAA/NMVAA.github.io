@@ -12,9 +12,10 @@ input[type=text] {
     border-radius: 5px;
 }
 
-input[type=text]:focus{
+input[type=text]:focus {
     outline: none;
 }
+
 .addNew {
     width: 30%;
     text-align: center;
@@ -26,6 +27,7 @@ input[type=text]:focus{
 }
 
 .item {
+    position: relative;
     width: 100%;
     margin: 10px auto;
     padding-bottom: 10px;
@@ -35,13 +37,14 @@ input[type=text]:focus{
 .itemName {
     position: relative;
     font-weight: bold;
-    top: 10px
+    top: 10px;
+    left: 5px;
 }
 
 .badge {
     position: relative;
     top: 10px;
-    left: 5px;
+    left: 10px;
     background: #27ccc0;
     color: white;
     border-radius: 15px
@@ -61,4 +64,14 @@ input[type=text]:focus{
     content: "";
     clear: both;
     display: table;
+}
+
+.selected {
+    position: absolute;
+    top: -11px;
+    left: -33px;
+    display: none;
+    background: #ff2f5a;
+    width: 6px;
+    height: 63px;
 }

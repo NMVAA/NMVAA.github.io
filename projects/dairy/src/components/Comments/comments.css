@@ -28,10 +28,10 @@
 .Comments form {
     margin-top: 20px;
 }
+
 textarea {
     width: 330px;
     height: 50px;
     margin-left: 10px;
     resize: none;
 }
-

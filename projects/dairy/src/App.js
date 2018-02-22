@@ -25,11 +25,11 @@ class App extends Component {
         name: "First item with custom name",
         comments: [{
           userImg: "http://via.placeholder.com/50/ff305a",
-          comment: "first comment" 
+          comment: "Vivamus commodo vel tellus at suscipit. Sed semper, felis in mattis condimentum, ex urna pretium purus, a scelerisque magna purus sed enim. Aliquam vel ullamcorper nibh, id interdum leo. Vestibulum tristique leo risus, in sagittis erat ornare eget. Pellentesque a eleifend dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam diam lorem, gravida porta quam porttitor, condimentum vehicula nulla. Fusce iaculis gravida suscipit. Mauris massa leo, congue et egestas et, viverra ac urna" 
         },
         {
           userImg: "http://via.placeholder.com/50/ff305a",
-          comment: "second comment" 
+          comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." 
         }]
       },
       {
@@ -37,11 +37,11 @@ class App extends Component {
         name: "Second item is active",
         comments: [{
           userImg: "http://via.placeholder.com/50/ff305a",
-          comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo vel tellus at suscipit. Sed semper, felis in mattis condimentum, ex urna pretium purus, a scelerisque magna purus sed enim. Aliquam vel ullamcorper nibh, id interdum leo. Vestibulum tristique leo risus, in sagittis erat ornare eget. Pellentesque a eleifend dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam diam lorem, gravida porta quam porttitor, condimentum vehicula nulla. Fusce iaculis gravida suscipit. Mauris massa leo, congue et egestas et, viverra ac urna. Vivamus mattis egestas eros at tincidunt. Aenean imperdiet dui ac lacinia ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos." 
+          comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." 
         },
         {
           userImg: "http://via.placeholder.com/50/27ccc0",
-          comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo vel tellus at suscipit. Sed semper, felis in mattis condimentum, ex urna pretium purus, a scelerisque magna purus sed enim. Aliquam vel ullamcorper nibh, id interdum leo. Vestibulum tristique leo risus, in sagittis erat ornare eget. Pellentesque a eleifend dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam diam lorem, gravida porta quam porttitor, condimentum vehicula nulla. Fusce iaculis gravida suscipit. Mauris massa leo, congue et egestas et, viverra ac urna. Vivamus mattis egestas eros at tincidunt. Aenean imperdiet dui ac lacinia ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos." 
+          comment: "Aliquam vel ullamcorper nibh, id interdum leo. Vestibulum tristique leo risus, in sagittis erat ornare eget." 
         }]
       },
     ]))
@@ -72,7 +72,13 @@ class App extends Component {
   }
 
   renderComments = (e) => {
+    for (let i of document.querySelectorAll("div.selected")){
+      i.style.display = "none";
+    }
     let index = e.target.getAttribute('data-index');
+    if (document.querySelectorAll("div.selected")[index]){
+      document.querySelectorAll("div.selected")[index].style.display = "block";
+    }
     this.setState({selectedItem: index})
   }
 
