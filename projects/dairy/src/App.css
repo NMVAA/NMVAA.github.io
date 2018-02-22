@@ -1,0 +1,42 @@
+body {
+    background: #f9f9f9;
+}
+
+.App {
+    position: relative;
+}
+
+.title {
+    position: fixed;
+    background: #2b2f3e;
+    width: 270px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.title h1 {
+    font-weight: lighter;
+    color: white;
+    margin-left: 30px;
+}
+
+.title span {
+    color: #808080;
+    margin-left: 30px;
+}
+
+.Dairy {
+    background: #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 300px;
+    margin-bottom: 10px;
+}
+
+.Comments {
+    background: #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 850px
+}

@@ -1,0 +1,37 @@
+.Comments {
+    width: 398px;
+    padding: 20px 25px 20px 25px;
+    border: 1px solid rgba(100, 100, 100, 0.25);
+    box-shadow: 1px 1px 10px #c8c8c8;
+}
+
+.commentItem {
+    position: relative;
+    width: 400px;
+    margin: auto;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.25);
+    min-height: 100px;
+}
+
+.commentItem img {
+    position: absolute;
+    top: 20px;
+}
+
+.commentItem p {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    left: 60px;
+}
+
+.Comments form {
+    margin-top: 20px;
+}
+textarea {
+    width: 330px;
+    height: 50px;
+    margin-left: 10px;
+    resize: none;
+}
+

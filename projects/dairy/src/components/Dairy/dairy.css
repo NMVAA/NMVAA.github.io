@@ -1,0 +1,64 @@
+.Dairy {
+    width: 480px;
+    padding: 20px 20px 20px 30px;
+    border: 1px solid rgba(100, 100, 100, 0.25);
+    box-shadow: 1px 1px 10px rgba(100, 100, 100, 0.25);
+}
+
+input[type=text] {
+    width: 65%;
+    border: 1px solid rgba(100, 100, 100, 0.25);
+    padding: 10px 0px 10px 10px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus{
+    outline: none;
+}
+.addNew {
+    width: 30%;
+    text-align: center;
+    float: right;
+    padding: 10px 0px 10px 0px;
+    background: #27ccc0;
+    color: white;
+    border-radius: 5px;
+}
+
+.item {
+    width: 100%;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.25);
+}
+
+.itemName {
+    position: relative;
+    font-weight: bold;
+    top: 10px
+}
+
+.badge {
+    position: relative;
+    top: 10px;
+    left: 5px;
+    background: #27ccc0;
+    color: white;
+    border-radius: 15px
+}
+
+.delete {
+    width: 100px;
+    text-align: center;
+    float: right;
+    padding: 10px 0px 10px 0px;
+    border: 1px solid #ff98ac;
+    color: #ff305a;
+    border-radius: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
